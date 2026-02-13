@@ -70,7 +70,7 @@ public class Injector {
         } catch (ReflectiveOperationException e) {
             throw new RuntimeException(
                     "Cannot create instance of "
-                    + implementationClass.getName());
+                            + implementationClass.getName(), e);
         }
     }
 }
